@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <div class="col-sm-12" style="height:50px;background-color: #2B1B17;"><h1>Cake Delivery System</h1> </div>
+
+    <div class="row jumbotron">
+        <div class="col-sm-12" style="left:200px;">
+             <h3 style="left:400px;">User Registration</h3>
+       </div>
+       <div class="row">
+           <div class="col-sm-12 jumbotron table table-bordered bg-dark text-danger" style="left:300px;width:700px;">
+                <!--<form [formGroup] = "form">-->
+                <form [formGroup] = "form" (ngSubmit) = "registerUser()">
+                <div>
+                    <label>User Name  :  </label>
+                    <input type="text" placeholder="Enter Name" formControlName = "user_name"/>
+                </div>
+
+                <div>
+                    <br/>
+                    <label>User Password  :  </label>
+                    <input type="password" placeholder="Enter Password" formControlName ="user_password"/>
+                </div>
+
+                <div>
+                    <br/>
+                    <label>Gender :  </label>
+                    <input type="radio" formControlName ="user_gender" value="Male"/>Male
+                    <input type="radio" formControlName ="user_gender" value="Female"/>Female
+                </div>
+
+                <div>
+                    <br/>
+                    <label>User Email  :  </label>
+                    <input type="email" placeholder="Enter Password" formControlName ="user_email"/>
+                </div>
+
+                <div>
+                    <br/>
+                    <label>User Mobile  :  </label>
+                    <input type="text"  formControlName ="user_mobile"/>
+                </div>
+
+                <div>
+                    <br/>
+                    <label>User Addresss :  </label>
+                    <input type="text" row="3" formControlName ="user_address"/>
+                </div>
+                  
+                <div>
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;
+                    <button type="submit" class="btn btn-success">Register</button>
+
+                    &nbsp;&nbsp;&nbsp;
+                    <button type="reset" class="btn btn-danger">Clear Form</button>
+                   
+                </div>
+                </form>
+            </div>
+
+</div>
+
+
+
+

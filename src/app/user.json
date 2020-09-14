@@ -1,0 +1,22 @@
+{
+  "userDetails": [
+    {
+      "user_name": "mazhar",
+      "user_password": "123",
+      "user_gender": "Male",
+      "user_email": "mazhar@gmail.com",
+      "user_mobile": "2345678987",
+      "user_address": "Nanded",
+      "id": 1
+    },
+    {
+      "user_name": "mona",
+      "user_password": "123",
+      "user_gender": "",
+      "user_email": "sha@gmail.com",
+      "user_mobile": "4567897654",
+      "user_address": "Nanded",
+      "id": 2
+    }
+  ]
+}

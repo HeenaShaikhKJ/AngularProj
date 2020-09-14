@@ -1,0 +1,94 @@
+{
+  "addCake": [
+    {
+      "cake_name": "Apple-Cake",
+      "cake_img": "../../assets/cakes/apple-cake.jpeg",
+      "cake_price": "500",
+      "cake_category": "Cake",
+      "id": 1
+    },
+    {
+      "cake_name": "BlackForest Cake",
+      "cake_img": "../../assets/cakes/blackforest.jpg",
+      "cake_price": "300",
+      "cake_category": "Cake",
+      "id": 2
+    },
+    {
+      "cake_name": "Anniversay Cake",
+      "cake_img": "../../assets/cakes/anniversay cake.jpg",
+      "cake_price": "600",
+      "cake_category": "Anniversay Cake",
+      "id": 3
+    },
+    {
+      "cake_name": "ButterScoth Cake",
+      "cake_img": "../../assets/cakes/butterscoth.jpg",
+      "cake_price": "800",
+      "cake_category": "Cake",
+      "id": 4
+    },
+    {
+      "cake_name": "Carrot-Cake",
+      "cake_img": "../../assets/cakes/carrot cake.jpg",
+      "cake_price": "500",
+      "cake_category": "Cake",
+      "id": 5
+    },
+    {
+      "cake_name": "ChoclateCake",
+      "cake_img": "../../assets/cakes/choclate.jpg",
+      "cake_price": "500",
+      "cake_category": "Cake",
+      "id": 6
+    },
+    {
+      "cake_name": "Frosty Chocho Cake",
+      "cake_img": "../../assets/cakes/Frosty-Round-Chocolate-Cake.jpg",
+      "cake_price": "800",
+      "cake_category": "Cake",
+      "id": 7
+    },
+    {
+      "cake_name": "ButterScoth Cake",
+      "cake_img": "../../assets/cakes/pineaaple buttersoch.jpg",
+      "cake_price": "900",
+      "cake_category": "Cake",
+      "id": 8
+    },
+    {
+      "cake_name": "Sponge-Cake",
+      "cake_img": "../../assets/cakes/sponge cake.jpg",
+      "cake_price": "500",
+      "cake_category": "Cake",
+      "id": 9
+    },
+    {
+      "cake_name": "Raspberry-Chocolate-Layer",
+      "cake_img": "../../assets/cakes/Raspberry-Chocolate-Layer-Cake4.jpg",
+      "cake_price": "1000",
+      "cake_category": "Cake",
+      "id": 10
+    },
+    {
+      "cake_name": "Dutch-Apple-Cake",
+      "cake_img": "../../assets/cakes/Dutch-Apple-Cake.jpg",
+      "cake_price": "700",
+      "cake_category": "Cake",
+      "id": 11
+    },
+    {
+      "cake_name": "Birthday chocklate",
+      "cake_img": "../../assets/cakes/birthday chocklate.jpg",
+      "cake_price": "900",
+      "cake_category": "Birthday Cake",
+      "id": 12
+    }
+  ],
+  "adminlogin": [
+    {
+      "admin_name": "heena",
+      "admin_password": 123
+    }
+  ]
+}

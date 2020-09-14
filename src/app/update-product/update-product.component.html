@@ -1,0 +1,84 @@
+
+<div class="container-fluid">
+    <div class="col-sm-12" style="height:50px;background-color: #2B1B17;"><h1>Cake Delivery System</h1> </div>
+        
+    <div class="row">
+        <div class="col-sm-12" style="left:0px;">
+            <nav class="navbar navbar-expand-sm navbar-info" style="background-color:aqua">				
+                <!-- Links -->
+            <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="/adminshow">View Cakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reg">Cakes Entry</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/customerview">View Customer</a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="#">View Orders</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="">Logout</a>
+                    </li>
+            </ul>
+        </nav> 
+        </div>
+    </div>   
+    <div class="row jumbotron">
+        <div class="col-sm-12" style="left:200px;">
+             <h3 style="left:400px;">Update Cake Entry</h3>
+       </div>
+       <div class="row">
+           <div class="col-sm-12 jumbotron table table-bordered bg-dark text-danger" style="left:300px;width:700px;">
+                <form [formGroup] = "form" (ngSubmit) = "updateProduct()">
+                <div>
+                    <label>Cake Name  :  </label>
+                    <input type="text" placeholder="Enter Cake Name"
+                    formControlName = "cake_name"/>
+                </div>
+
+                <div>
+                    <br/>
+                    <label>Cake image   :  </label>
+                    <input type="file" formControlName ="cake_img" (change)="onFileSelected($event)"/>
+                    <button type="button" (click)="onUpload()">Upload</button>
+                </div>
+                  
+                <div>
+                    <br/>
+                    <label>Cake Price  :  </label>
+                    <input type="text" formControlName ="cake_price"/>
+                </div>
+
+                <div>
+                    <br/>
+                    <label>Cake Category</label>
+                    <select formControlName = "cake_category">
+                        <option *ngFor="let b of cake_category" [value]="b">
+                            {{b}}
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;
+                    <button type="submit" class="btn btn-success">Save</button> &nbsp;&nbsp;&nbsp;
+                    <button type="reset" class="btn btn-danger">Clear</button>
+                </div>
+                </form>
+           </div>
+       </div>
+
+
+       
+
+
+
+
+
+
+
+
+</div><!--container-->
