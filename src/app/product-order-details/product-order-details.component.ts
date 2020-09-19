@@ -13,10 +13,12 @@ import{DataService} from '../data.service';
 export class ProductOrderDetailsComponent implements OnInit {
   
 
+  
   constructor( private route: ActivatedRoute,private dataservice:DataService) 
     { }
 
   ngOnInit(): void {
+   
   }
 
 }

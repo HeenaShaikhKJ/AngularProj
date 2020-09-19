@@ -4,8 +4,6 @@ import{FormGroup,FormControl} from '@angular/forms';
 import{DataService} from '../data.service';
 import {HttpClient}from '@angular/common/http';
 
-
-
 @Component({
   selector: 'app-admin-product-add',
   templateUrl: './admin-product-add.component.html',

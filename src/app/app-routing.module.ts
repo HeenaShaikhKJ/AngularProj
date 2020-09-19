@@ -10,6 +10,8 @@ import{ UserRegistrationComponent }from './user-registration/user-registration.c
 import{ UserDashboardComponent }from './user-dashboard/user-dashboard.component';
 import{ CustomerDetailsComponent }from './customer-details/customer-details.component';
 import{ CartComponent }from './cart/cart.component';
+import{ProductpayementComponent}from './productpayement/productpayement.component';
+import{ UserProfileComponent }from './user-profile/user-profile.component';
 
 const routes: Routes = 
 [
@@ -20,9 +22,21 @@ const routes: Routes =
   {path:"updateProduct/:id",component:UpdateProductComponent},
   {path:"userlogin",component:UserloginComponent},
   {path:"userRegistration",component:UserRegistrationComponent},
-  {path:"userview/:name",component:UserDashboardComponent},
+  {path:"userview",component:UserDashboardComponent},
+  {path:"userProfile",component:UserProfileComponent},
+
+
+  /*{path:"userview/:name",component:UserDashboardComponent,
+  children:[
+            {path:"userProfile",component:UserProfileComponent}
+
+           ]
+
+  },*/
+
   {path:"customerview",component:CustomerDetailsComponent},
-  {path:"cart",component:CartComponent}
+  {path:"cart",component:CartComponent},
+  {path:"Productpayement",component:ProductpayementComponent}
 
   
 ];

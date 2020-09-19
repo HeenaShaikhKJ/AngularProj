@@ -1,6 +1,27 @@
-<h3>Cart</h3>
+<div class="container-fluid">
+  <div class="col-sm-12" style="height:50px;background-color: #2B1B17;"><h1>Cake Delivery System</h1> </div> 
 
-<div *ngFor="let item of items">
-  <h3>{{item.cake_name}}</h3>
- 
+<div class="jumbotron">
+  <h3>Cart Details</h3>
+<table class="table table-bordered table-striped table-hover"> 
+  <thead style="background-color: crimson;">
+      <tr>
+          <th>Cake Id</th>
+          <th>Cake Name</th>
+          <th>Cake Price</th>
+          <th>Cake Category</th>  
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor = "let s of checkoutData">
+          <td>{{s.id}}</td>
+          <td>{{s.cake_name}}</td>
+          <td>{{s.cake_price}}</td>
+          <td>{{s.cake_category}}</td>  
+      </tr> 
+    </tbody>
+</table>
+<button type="submit" class="btn btn-success" [routerLink]="['/Productpayement']">Buy Products</button>
 </div>
+
+

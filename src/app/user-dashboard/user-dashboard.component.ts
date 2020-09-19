@@ -1,7 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-
-
+import { Component,Input, OnInit } from '@angular/core';
 import{DataService} from '../data.service';
 import{userRegisterDet}from '../user-registration/UserRegisterDet';
 import{ActivatedRoute,Router} from '@angular/router';
@@ -20,43 +17,40 @@ export class UserDashboardComponent implements OnInit {
   form:FormGroup;
 
  
+  //check;
+  
   constructor(private dataservice:DataService,private activatedroute:ActivatedRoute,private router:Router) { }
 
   ngOnInit(): void {
-     
-    this.activatedroute.params.subscribe((param)=>
-    {
+       
+    this.userdata=JSON.parse(sessionStorage.getItem('udata'));
+    console.log(this.userdata); 
+      
+      /*this.dataservice.getValidUserWelcome().subscribe((res)=>
+      {
+         this.name=res;
+         console.log(this.name);
+      })
+      */
+
+     /*this.activatedroute.params.subscribe((param)=>
+     {
        this.name=param["name"]
-       this.userdata=this.name
-      /* this.dataservice.getUserByI(this.id).subscribe((data)=>
-       {
-         this.userdata=data
-
-           this.form=new FormGroup(
-             {
-               user_name:new FormControl(this.userdata.user_name)
-
-             }
-           )
-        
-
-
-
-       }
-       )*/ 
        
 
-       
-     
-       
-    }
-    )
-
-
-
-
-
+     }) 
+     */
+    
    
+    
+    
   }
 
 }
+
+
+
+
+
+
+

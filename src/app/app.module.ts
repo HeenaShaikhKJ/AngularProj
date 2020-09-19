@@ -19,6 +19,8 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { ProductOrderDetailsComponent } from './product-order-details/product-order-details.component';
 import { CartComponent } from './cart/cart.component';
+import { ProductpayementComponent } from './productpayement/productpayement.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { CartComponent } from './cart/cart.component';
     UserDashboardComponent,
     CustomerDetailsComponent,
     ProductOrderDetailsComponent,
-    CartComponent
+    CartComponent,
+    ProductpayementComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,

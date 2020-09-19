@@ -29,20 +29,20 @@
 <table class="table table-bordered table-striped table-hover"> 
     <thead style="background-color: crimson;">
         <tr>
-            <th>User Id</th>
-            <th>User Name</th>
-            <th>User Mobile</th>
-            <th>User Gender</th>
-            <th>User Address</th>
+            <th>Customer Id</th>
+            <th>Customer Name</th>
+            <th>Customer Gender</th>
+            <th>Customer Mobile</th>
+            <th>Customer Address</th>
              
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor = "let s of userdata">
+        <tr *ngFor = "let s of custlist">
+            <td>{{s.user_id}}</td>
             <td>{{s.user_name}}</td>
-            <td>{{s.user_password}}</td>
-            <td>{{s.user_mobile}}</td>
             <td>{{s.user_gender}}</td>
+            <td>{{s.user_mobile}}</td>
             <td>{{s.user_address}}</td>
         </tr>
     </tbody>

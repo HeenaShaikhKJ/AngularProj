@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div class="col-sm-12" style="height:50px;background-color: #2B1B17;"><h1>Cake Delivery System</h1> </div>
         <div class="row">
-        <div class="col-sm-12" style="left:0px;">
+        <div class="col-sm-12" style="left:10px;">
             <nav class="navbar navbar-expand-sm navbar-info" style="background-color:aqua">				
                 <!-- Links -->
             <ul class="navbar-nav">
@@ -24,9 +24,10 @@
                      </li>
 
                      <li class="nav-item">
-                     <a class="nav-link" href="/cart" style="color:crimson">Shopping cart checkout</a>
+                     <a class="nav-link" href="/cart" style="color:crimson"> <i class="fa fa-shopping-cart" style="font-size:35px;color:red;"></i></a>
                      </li>
             </ul>
+           
         </nav> 
     </div>
 </div>
@@ -70,6 +71,8 @@
                 <li>{{s.cake_price}}</li>
                 <li><button class="btn btn-info" (click)="addToCart(s)">Add to Cart</button></li>
             </ul>
+            
+
             </div>
 
     <!--<table class="table table-bordered table-striped table-hover"> 

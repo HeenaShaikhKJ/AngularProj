@@ -5,8 +5,6 @@ import{AddCake}from '../admin-product-add/admin';
 
 import { ActivatedRoute } from '@angular/router';
 
-
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,6 +13,9 @@ import { ActivatedRoute } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   AddCake: any=[];
+ 
+  cardData:any=[];
+
      getCakeData()
      {
       this.dataservice.getData().subscribe((res)=>
@@ -22,13 +23,21 @@ export class HomeComponent implements OnInit {
           this.AddCake=res;
       }) 
      }
+   
 
-     addToCart(product) {
-       product.cake_name
-      this.dataservice.addToCart(product);
-      console.log(product);
+     addToCart(AddCake) 
+     {
+      this.cardData.push(AddCake);
+      var productdata=JSON.stringify(this.cardData);
+      sessionStorage.setItem('cardData',productdata);
+      console.log(AddCake);
       window.alert('Your product has been added to the cart!');
     }
+    
+
+    
+
+
 
      
   

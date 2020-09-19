@@ -9,8 +9,8 @@ import{userRegisterDet}from '../user-registration/UserRegisterDet';
 })
 export class CustomerDetailsComponent implements OnInit {
 
-
-  userdata:any;
+  custlist:any=[];
+  /*userdata:any;
   getUserData()
   {
    this.dataservice.getUserData().subscribe((res)=>
@@ -18,10 +18,18 @@ export class CustomerDetailsComponent implements OnInit {
        this.userdata=res;
    }) 
   }
+  */
   constructor(private dataservice:DataService) { }
 
   ngOnInit(): void {
-    this.getUserData();
+    //this.getUserData();
+
+    this.dataservice.getCustomerDetails().subscribe((userdata)=>{
+      this.custlist=userdata;
+      console.log(this.custlist);
+    })
+      
+
   }
 
 }
